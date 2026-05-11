@@ -642,6 +642,10 @@ h3 .icon-arrow,
   height: 20px;
 }
 
+.svg-wrapper.announcement-bar-icon {
+  color: #fff;
+}
+
 .svg-wrapper > svg {
   height: 100%;
   width: 100%;
@@ -2096,6 +2100,7 @@ input[type='checkbox'] {
 
 .utility-bar--bottom-border {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  background-color: #000 !important;
 }
 
 @media screen and (min-width: 990px) {
@@ -2155,6 +2160,8 @@ input[type='checkbox'] {
   flex-wrap: wrap;
   align-content: center;
   grid-area: announcements;
+  align-items: center;
+  gap: 16px;
 }
 
 .announcement-bar .slider--everywhere {
@@ -2223,6 +2230,13 @@ input[type='checkbox'] {
   }
 }
 
+.announcement-topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .announcement-bar__link {
   display: flex;
   width: 100%;
@@ -2246,11 +2260,51 @@ input[type='checkbox'] {
 
 .announcement-bar__message {
   text-align: center;
+  font-size: 16px;
   padding: 1rem 0;
   margin: 0;
   letter-spacing: 0.1rem;
   min-height: 3.8rem;
+  color: #fff;
+  width: max-content;
 }
+
+.announcement-bar__reviews {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.announcement-bar__star-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+
+.announcement-bar__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.announcement-bar__star-icon svg, .svg-wrapper.announcement-bar-icon.icon-facebook {
+  width: 16px;
+}
+
+.svg-wrapper.announcement-bar-icon.icon-instagram {
+  width: 22px;
+  height: 22px;
+}
+
+.svg-wrapper.announcement-bar-icon.icon-tiktok {
+  width: 22px;
+  height: 22px;
+}
+
 
 .announcement-bar-slider--fade-in-next .announcement-bar__message,
 .announcement-bar-slider--fade-in-previous .announcement-bar__message,
